@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | Cyber Edition</title>
+    <meta name="description" content="Futuristic, holographic Tic-Tac-Toe experience.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="bg-visuals" id="particleContainer"></div>
+
+    <div class="theme-switch" id="themeToggle">🌓</div>
+
+    <div class="hud-container">
+
+        <aside class="hud-sidebar">
+            <div class="hud-panel">
+                <h2 class="hud-title">System Status</h2>
+                <div id="statusText">Active Neutralization</div>
+                <div id="turnIndicator" class="score-tag x">X-LINK STABLE</div>
+            </div>
+
+            <div class="hud-panel">
+                <h2 class="hud-title">Data Log</h2>
+                <div class="score-row">
+                    <span id="playerXName" class="score-tag x">KARTHIK</span>
+                    <span id="scoreX" class="score-num">00</span>
+                </div>
+                <div class="score-row">
+                    <span id="playerOName" class="score-tag o">UDAY</span>
+                    <span id="scoreO" class="score-num">00</span>
+                </div>
+                <div class="score-row">
+                    <span class="score-tag draw">Draws</span>
+                    <span id="scoreDraw" class="score-num">00</span>
+                </div>
+            </div>
+
+            <div class="hud-panel">
+                <h2 class="hud-title">Interface Mode</h2>
+                <div class="hud-actions" style="flex-direction: column;">
+                    <button id="pvpMode" class="btn-cyber active">PLAY WITH USER</button>
+                    <button id="pveMode" class="btn-cyber secondary">PLAY WITH SYSTEM</button>
+                </div>
+            </div>
+        </aside>
+
+
+        <main class="hud-main">
+            <h1 class="game-title">Tic-Tac-Toe</h1>
+
+            <div class="board-container">
+                <div class="board-grid" id="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </div>
+
+            <button id="restartBtn" class="btn-cyber">Reset System</button>
+        </main>
+    </div>
+
+    <div id="overlay" class="result-overlay">
+        <div class="result-content">
+            <h2 id="resultMsg" class="game-title" style="font-size: 4rem;">System Overload</h2>
+            <div style="margin-top: 2rem;">
+                <button id="playAgainBtn" class="btn-cyber">Re-Initialize</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
